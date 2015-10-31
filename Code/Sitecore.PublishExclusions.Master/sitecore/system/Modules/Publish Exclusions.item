@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {A84D52FB-52A4-4D33-BB4B-8F9FB3931523}
+database: master
+path: /sitecore/system/Modules/Publish Exclusions
+parent: {08477468-D438-43D4-9D6A-6D84A611971C}
+name: Publish Exclusions
+master: {00000000-0000-0000-0000-000000000000}
+template: {239F9CF4-E5A0-44E0-B342-0F32CD4C6D8B}
+templatekey: Node
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 29
+
+People/32x32/books_delete.png
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: b4618286-3397-4844-943d-e93029208a6c
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20151010T232216
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b4618286-3397-4844-943d-e93029208a6c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20151017T154447:635806934876143880
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
