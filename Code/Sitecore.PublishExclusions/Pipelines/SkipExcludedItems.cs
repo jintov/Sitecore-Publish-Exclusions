@@ -46,7 +46,9 @@
             {
                 Assert.ArgumentNotNull((object)context, "context");
                 Assert.ArgumentNotNull((object)context.PublishOptions, "context.PublishOptions");
-                Assert.ArgumentNotNull((object)context.VersionToPublish, "context.VersionToPublish");
+
+                if (context.VersionToPublish == null)
+                    return;
 
                 PublishingLog.Debug(string.Format("Sitecore.PublishExclusions : SkipExcludedItems processing item - '{0}'", context.VersionToPublish.Paths.Path));
 
