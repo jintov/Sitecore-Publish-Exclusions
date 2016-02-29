@@ -50,25 +50,18 @@
 
                 if (context.VersionToPublish == null)
                 {
-                    // handled case where deleted items also should get excluded from publishing.
+                    // handled case where deleted items also should get excluded from publishing
                     if (context.Action == PublishAction.DeleteTargetItem && context.PublishOptions != null)
                     {
                         Item deletedItem = context.PublishOptions.TargetDatabase.GetItem(context.ItemId);
                         if (deletedItem == null)
-                        { 
                             return;
-                        }
-                        else
-                        {
-                            context.VersionToPublish = deletedItem;
-                        }
+
+                        context.VersionToPublish = deletedItem;
                     }
                     else
-                    {
                         return;
-                    }
                 }
-
 
                 PublishingLog.Debug(string.Format("Sitecore.PublishExclusions : SkipExcludedItems processing item - '{0}'", context.VersionToPublish.Paths.Path));
 

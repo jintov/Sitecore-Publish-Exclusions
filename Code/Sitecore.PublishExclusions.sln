@@ -19,6 +19,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SC8.0", "SC8.0", "{BDC68ACD
 		Lib\SC8.0\Sitecore.Kernel.dll = Lib\SC8.0\Sitecore.Kernel.dll
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SC8.1", "SC8.1", "{118FF76E-9F6E-4D12-950B-36E33203EFC8}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\SC8.1\Sitecore.Kernel.dll = Lib\SC8.1\Sitecore.Kernel.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{A4072703-2E52-4E52-8CB2-7325BCFF02E9}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionFiles\Sitecore Publish Exclusions.xml = SolutionFiles\Sitecore Publish Exclusions.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +52,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4D4597A6-1DE7-4733-98F9-2BDCEEBEC8C8} = {86A56921-595A-46A8-B893-6F58DB08D705}
 		{BDC68ACD-5C3F-4637-B1F2-F39ACBEA1FB6} = {86A56921-595A-46A8-B893-6F58DB08D705}
+		{118FF76E-9F6E-4D12-950B-36E33203EFC8} = {86A56921-595A-46A8-B893-6F58DB08D705}
 	EndGlobalSection
 EndGlobal

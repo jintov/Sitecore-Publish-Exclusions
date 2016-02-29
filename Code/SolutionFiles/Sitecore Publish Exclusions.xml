@@ -1,0 +1,105 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Sitecore Publish Exclusions</PackageName>
+      <Author>Jinto Varghese</Author>
+      <Version>1.0.2</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>This module allows you to configure publish exclusions (not publish restrictions) for the content in your Sitecore instance. Publish exclusions can be configured separately for each publishing target and for each publish mode.
+
+* Details about the framework - https://thesitecorezone.wordpress.com/2015/10/31/sitecore-publish-exclusions/
+
+* Source code – https://github.com/jintov/Sitecore-Publish-Exclusions
+
+Update 1.0.2
+* Support for Sitecore 8.1
+* Support for deleted items, i.e., item deletes are not published if the item is marked for publish exclusion
+</Readme>
+      <Publisher>Jinto Varghese</Publisher>
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.PublishExclusions.config</x-item>
+        <x-item>/bin/Sitecore.PublishExclusions.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Modules/Publish Exclusions/{A84D52FB-52A4-4D33-BB4B-8F9FB3931523}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Publish Exclusions/Exclusions Repository/{4FFE5F64-0A24-457A-B173-5544DD15575C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Publish Exclusions/Global Configuration/{408BFC5F-4B97-44B7-BD74-423699C89788}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/{5D4F00AD-5DBD-40EA-9B47-475218AFF96F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/{5E008E67-BE26-4FF4-9EEC-1A8A64E98A87}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Configuration/__Standard Values/{2F6D65B7-4511-466A-A749-5D64B7E80A8C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Configuration/{FBB5D6F0-BFA6-4B44-B2B9-A4AD1E2204F9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Configuration/Publish Configuration/{D7CAB3B3-998D-4013-9D76-9F300487C4DA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Configuration/Publish Configuration/Return Items to Publish Queue/{6EC4C789-A8EA-405E-AB9F-5A19C60FA3E8}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Configuration/Publish Configuration/Show Content Editor Warnings/{1A77BB65-5A46-468D-BA46-C9EA126A0385}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Exclusion/__Standard Values/{8B918FBC-475A-47CA-BEE9-B4E79B14C481}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Exclusion/{A23FF669-89DD-4CA7-AB42-6C75E8E891F5}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Exclusion/Exclusion Details/{651C7D80-7933-4A30-90A8-9936571A89D7}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Exclusion/Exclusion Details/Excluded Nodes/{AF0EB394-C0F6-47DA-827E-A6D517168B59}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Exclusion/Exclusion Details/Exclusion Overrides/{9F003C6A-9093-4AF1-A373-C3BB0AD886DC}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Exclusion/Exclusion Details/Publish Modes/{4F2D831B-DA0B-4E99-BE3A-577B4431A501}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Exclusion/Exclusion Details/Publishing Target/{7CC04BA0-2E1F-44AB-AC8D-19F8CD05608B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/{DE7680EB-4635-4853-BABF-3CD1EF6137A5}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Full/{76013B45-C104-4077-B75A-6EBFC8A4BD44}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Incremental/{3D44B870-628F-45AB-A2CD-81DB11668AE2}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Single Item/{58FB447B-0608-4E01-9359-27D5CF01DC96}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Smart/{81ACC9A4-3169-4E5A-B300-1C743EB0F135}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
