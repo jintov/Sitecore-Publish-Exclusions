@@ -50,7 +50,8 @@
 
                 if (context.VersionToPublish == null)
                 {
-                    // handled case where deleted items also should get excluded from publishing
+                    // Case 1: handled case where deleted items also should get excluded from publishing
+                    // Case 2: handled case where shared fields of an item should be excluded from publishing
                     if (context.Action == PublishAction.DeleteTargetItem && context.PublishOptions != null)
                     {
                         Item deletedItem = context.PublishOptions.TargetDatabase.GetItem(context.ItemId);
@@ -58,6 +59,14 @@
                             return;
 
                         context.VersionToPublish = deletedItem;
+                    }
+                    else if (context.Action == PublishAction.PublishSharedFields && context.PublishOptions != null)
+                    {
+                        Item sharedItem = context.PublishOptions.SourceDatabase.GetItem(context.ItemId);
+                        if (sharedItem == null)
+                            return;
+
+                        context.VersionToPublish = sharedItem;
                     }
                     else
                         return;
@@ -74,6 +83,10 @@
                     context.Result = new PublishItemResult(PublishOperation.Skipped, PublishChildAction.Skip, explanation, PublishExclusionsContext.Current.ReturnItemsToPublishQueue);
                     context.AbortPipeline();
                 }
+
+                //if publish action item is shared fields and version to publish has been manually set to an item then set it back to null
+                if (context.Action == PublishAction.PublishSharedFields && context.VersionToPublish != null)
+                    context.VersionToPublish = null;
             }
             catch (Exception ex)
             {
