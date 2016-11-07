@@ -8,6 +8,7 @@ name: Return Items to Publish Queue
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
+created: 20161013T173606:636119769669670000
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -40,7 +41,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 12d3b436-66c6-4d41-a1f6-5084b15fd6db
+revision: af7755c1-dae3-46b2-b2a3-8f9ce35d2558
 
 ----field----
 field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
@@ -60,30 +61,30 @@ content-length: 0
 field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
 name: __Short description
 key: __short description
-content-length: 0
+content-length: 39
 
-
+(not applicable for Publishing Service)
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20151013T222717
+20151014T022717Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-12d3b436-66c6-4d41-a1f6-5084b15fd6db
+af7755c1-dae3-46b2-b2a3-8f9ce35d2558
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20151017T162334:635806958143444694
+20161103T162653Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

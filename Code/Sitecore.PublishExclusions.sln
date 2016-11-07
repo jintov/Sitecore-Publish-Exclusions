@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.PublishExclusions", "Sitecore.PublishExclusions\Sitecore.PublishExclusions.csproj", "{B44947BE-C44A-4330-895F-3DF21E936D41}"
 EndProject
@@ -29,6 +29,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFi
 		SolutionFiles\Sitecore Publish Exclusions.xml = SolutionFiles\Sitecore Publish Exclusions.xml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.PublishExclusions.PublishingService", "Sitecore.PublishExclusions.PublishingService\Sitecore.PublishExclusions.PublishingService.csproj", "{125E399C-F888-44B1-B880-6F5CDBE46123}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SC8.2", "SC8.2", "{948EB378-8812-44EE-A429-0AD7E9F8E759}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\SC8.2\Dapper.dll = Lib\SC8.2\Dapper.dll
+		Lib\SC8.2\Microsoft.AspNetCore.Hosting.Abstractions.dll = Lib\SC8.2\Microsoft.AspNetCore.Hosting.Abstractions.dll
+		Lib\SC8.2\Microsoft.AspNetCore.Hosting.dll = Lib\SC8.2\Microsoft.AspNetCore.Hosting.dll
+		Lib\SC8.2\Microsoft.Extensions.Configuration.Abstractions.dll = Lib\SC8.2\Microsoft.Extensions.Configuration.Abstractions.dll
+		Lib\SC8.2\Microsoft.Extensions.Configuration.dll = Lib\SC8.2\Microsoft.Extensions.Configuration.dll
+		Lib\SC8.2\Microsoft.Extensions.Logging.Abstractions.dll = Lib\SC8.2\Microsoft.Extensions.Logging.Abstractions.dll
+		Lib\SC8.2\Microsoft.Extensions.Logging.dll = Lib\SC8.2\Microsoft.Extensions.Logging.dll
+		Lib\SC8.2\Sitecore.Framework.Conditions.dll = Lib\SC8.2\Sitecore.Framework.Conditions.dll
+		Lib\SC8.2\Sitecore.Framework.Configuration.Extensions.dll = Lib\SC8.2\Sitecore.Framework.Configuration.Extensions.dll
+		Lib\SC8.2\Sitecore.Framework.Eventing.Abstractions.dll = Lib\SC8.2\Sitecore.Framework.Eventing.Abstractions.dll
+		Lib\SC8.2\Sitecore.Framework.Publishing.Abstractions.dll = Lib\SC8.2\Sitecore.Framework.Publishing.Abstractions.dll
+		Lib\SC8.2\Sitecore.Framework.Publishing.Data.dll = Lib\SC8.2\Sitecore.Framework.Publishing.Data.dll
+		Lib\SC8.2\Sitecore.Framework.Publishing.dll = Lib\SC8.2\Sitecore.Framework.Publishing.dll
+		Lib\SC8.2\Sitecore.Kernel.dll = Lib\SC8.2\Sitecore.Kernel.dll
+		Lib\SC8.2\System.Reactive.Core.dll = Lib\SC8.2\System.Reactive.Core.dll
+		Lib\SC8.2\System.Reactive.Interfaces.dll = Lib\SC8.2\System.Reactive.Interfaces.dll
+		Lib\SC8.2\System.Reactive.Linq.dll = Lib\SC8.2\System.Reactive.Linq.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +68,10 @@ Global
 		{AA0EF4C0-EDB8-4607-9609-346C8965440C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA0EF4C0-EDB8-4607-9609-346C8965440C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AA0EF4C0-EDB8-4607-9609-346C8965440C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{125E399C-F888-44B1-B880-6F5CDBE46123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125E399C-F888-44B1-B880-6F5CDBE46123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125E399C-F888-44B1-B880-6F5CDBE46123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125E399C-F888-44B1-B880-6F5CDBE46123}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,5 +80,6 @@ Global
 		{4D4597A6-1DE7-4733-98F9-2BDCEEBEC8C8} = {86A56921-595A-46A8-B893-6F58DB08D705}
 		{BDC68ACD-5C3F-4637-B1F2-F39ACBEA1FB6} = {86A56921-595A-46A8-B893-6F58DB08D705}
 		{118FF76E-9F6E-4D12-950B-36E33203EFC8} = {86A56921-595A-46A8-B893-6F58DB08D705}
+		{948EB378-8812-44EE-A429-0AD7E9F8E759} = {86A56921-595A-46A8-B893-6F58DB08D705}
 	EndGlobalSection
 EndGlobal

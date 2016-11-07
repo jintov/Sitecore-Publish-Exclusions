@@ -156,10 +156,10 @@
         {
             switch (mode.ToLowerInvariant())
             {
-                case "full": return PublishMode.Full;
-                case "smart": return PublishMode.Smart;
-                case "incremental": return PublishMode.Incremental;
-                case "single item": return PublishMode.SingleItem;
+                case "full publish": return PublishMode.Full;
+                case "smart publish": return PublishMode.Smart;
+                case "incremental or site publish": return PublishMode.Incremental;
+                case "single item publish": return PublishMode.SingleItem;
                 default: return PublishMode.Unknown;
             }
         }

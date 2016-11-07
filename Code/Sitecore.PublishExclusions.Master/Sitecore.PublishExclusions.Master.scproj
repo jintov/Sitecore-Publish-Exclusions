@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -32,10 +33,10 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreWebUrl>http://instance80</SitecoreWebUrl>
+    <SitecoreWebUrl>http://instance82</SitecoreWebUrl>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
-    <SitecoreDeployFolder>D:\Sites\Instance80\Website</SitecoreDeployFolder>
+    <SitecoreDeployFolder>C:\Sites\Instance82\Website</SitecoreDeployFolder>
     <SitecoreAccessGuid>a8f11398-0298-4614-9fb3-eb6e255af15d</SitecoreAccessGuid>
     <PackageName>Sitecore.PublishExclusions.Master</PackageName>
     <GeneratePackage>True</GeneratePackage>
@@ -46,8 +47,8 @@
     <PackagePublisher>Jinto Varghese</PackagePublisher>
     <PackageReadme>
     </PackageReadme>
-    <PackageVersion>1.0.0</PackageVersion>
-    <SitecoreAssemblyPath>D:\Sites\Instance80\Website\bin</SitecoreAssemblyPath>
+    <PackageVersion>2.0.0</PackageVersion>
+    <SitecoreAssemblyPath>C:\Sites\Instance82\Website\bin</SitecoreAssemblyPath>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\Sitecore.PublishExclusions.Master_Debug.xml</ValidationSettingsFilePath>
   </PropertyGroup>
@@ -57,10 +58,10 @@
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\Sitecore.PublishExclusions.Master_Release.xml</ValidationSettingsFilePath>
-    <SitecoreWebUrl>http://instance72cm2</SitecoreWebUrl>
+    <SitecoreWebUrl>http://instance82</SitecoreWebUrl>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
-    <SitecoreDeployFolder>D:\Sites\Instance72\CM2\Website</SitecoreDeployFolder>
+    <SitecoreDeployFolder>C:\Sites\Instance82\Website</SitecoreDeployFolder>
     <SitecoreAccessGuid>43553c11-3278-41e8-924c-be7b3ed93da2</SitecoreAccessGuid>
     <PackageName>Sitecore.PublishExclusions.Master</PackageName>
     <GeneratePackage>True</GeneratePackage>
@@ -75,7 +76,7 @@
     </PackageReadme>
     <PackageVersion>
     </PackageVersion>
-    <SitecoreAssemblyPath>D:\Sites\Instance80\Website\bin</SitecoreAssemblyPath>
+    <SitecoreAssemblyPath>C:\Sites\Instance82\Website\bin</SitecoreAssemblyPath>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
@@ -170,22 +171,22 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Modules\Publish Exclusions\Publish Modes\Full.item">
+    <SitecoreItem Include="sitecore\templates\Modules\Publish Exclusions\Publish Modes\Full Publish.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Modules\Publish Exclusions\Publish Modes\Incremental.item">
+    <SitecoreItem Include="sitecore\templates\Modules\Publish Exclusions\Publish Modes\Incremental or Site Publish.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Modules\Publish Exclusions\Publish Modes\Single Item.item">
+    <SitecoreItem Include="sitecore\templates\Modules\Publish Exclusions\Publish Modes\Single Item Publish.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Modules\Publish Exclusions\Publish Modes\Smart.item">
+    <SitecoreItem Include="sitecore\templates\Modules\Publish Exclusions\Publish Modes\Smart Publish.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

@@ -1,0 +1,34 @@
+<Settings>
+  <Sitecore>
+    <Publishing>
+      <Services>
+
+        <PublishExclusionsProvider>
+          <Type>Sitecore.PublishExclusions.PublishingService.Providers.PublishExclusionsProvider, Sitecore.PublishExclusions.PublishingService</Type>
+          <As>Sitecore.PublishExclusions.PublishingService.Providers.IPublishExclusionsProvider`1[[Sitecore.Framework.Publishing.Data.IDatabaseConnection, Sitecore.Framework.Publishing.Abstractions]], Sitecore.PublishExclusions.PublishingService</As>
+          <Options>
+            <SingleItemPublish>{58FB447B-0608-4E01-9359-27D5CF01DC96}</SingleItemPublish>
+            <SitePublish>{3D44B870-628F-45AB-A2CD-81DB11668AE2}</SitePublish>
+            <FullPublish>{76013B45-C104-4077-B75A-6EBFC8A4BD44}</FullPublish>
+          </Options>
+        </PublishExclusionsProvider>
+
+        <PublishExclusionsRepositoryBuilder>
+          <Type>Sitecore.PublishExclusions.PublishingService.Repositories.PublishExclusionsRepositoryBuilder, Sitecore.PublishExclusions.PublishingService</Type>
+          <As>Sitecore.Framework.Publishing.Repository.IRepositoryBuilder`1[[Sitecore.PublishExclusions.PublishingService.Repositories.IPublishExclusionsRepository, Sitecore.PublishExclusions.PublishingService]], Sitecore.Framework.Publishing.Abstractions</As>
+        </PublishExclusionsRepositoryBuilder>
+		
+        
+        <IncrementalPublishHandler>
+          <Type>Sitecore.PublishExclusions.PublishingService.Handlers.IncrementalPublishHandler, Sitecore.PublishExclusions.PublishingService</Type>
+          <As>Sitecore.Framework.Publishing.PublishJobQueue.IPublishJobHandler, Sitecore.Framework.Publishing.Abstractions</As>
+        </IncrementalPublishHandler>
+        <TreePublishHandler>
+          <Type>Sitecore.PublishExclusions.PublishingService.Handlers.TreePublishHandler, Sitecore.PublishExclusions.PublishingService</Type>
+          <As>Sitecore.Framework.Publishing.PublishJobQueue.IPublishJobHandler, Sitecore.Framework.Publishing.Abstractions</As>
+        </TreePublishHandler>
+
+      </Services>
+    </Publishing>
+  </Sitecore>
+</Settings>

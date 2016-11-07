@@ -3,20 +3,21 @@
     <metadata>
       <PackageName>Sitecore Publish Exclusions</PackageName>
       <Author>Jinto Varghese</Author>
-      <Version>1.0.2</Version>
+      <Version>2.0.0</Version>
       <Revision />
       <License />
       <Comment />
       <Attributes />
-      <Readme>This module allows you to configure publish exclusions (not publish restrictions) for the content in your Sitecore instance. Publish exclusions can be configured separately for each publishing target and for each publish mode.
+      <Readme>This module allows you to configure publish exclusions (not publish restrictions) for the content in your Sitecore instance. Publish exclusions can be configured separately for each publishing target and for each publish mode. The module also works with Sitecore's new Publishing Service, though it requires additional steps to be followed.
 
 * Details about the framework - https://thesitecorezone.wordpress.com/2015/10/31/sitecore-publish-exclusions/
-
+* Documentation - https://thesitecorezone.wordpress.com/2016/11/03/sitecore-publish-exclusions-module/
 * Source code – https://github.com/jintov/Sitecore-Publish-Exclusions
 
-Update 1.0.2
-* Support for Sitecore 8.1
-* Support for deleted items, i.e., item deletes are not published if the item is marked for publish exclusion
+Update 2.0.0
+* Support for Sitecore 8.2
+* Support for Publishing Service
+* Fixed an issue wherein Shared fields where getting published even if the item was excluded for publish
 </Readme>
       <Publisher>Jinto Varghese</Publisher>
       <PostStep />
@@ -25,30 +26,6 @@ Update 1.0.2
   </Metadata>
   <SaveProject>True</SaveProject>
   <Sources>
-    <xfiles>
-      <Entries>
-        <x-item>/App_Config/Include/Sitecore.PublishExclusions.config</x-item>
-        <x-item>/bin/Sitecore.PublishExclusions.dll</x-item>
-      </Entries>
-      <Converter>
-        <FileToEntryConverter>
-          <Root>/</Root>
-          <Transforms>
-            <InstallerConfigurationTransform>
-              <Options>
-                <BehaviourOptions>
-                  <ItemMode>Undefined</ItemMode>
-                  <ItemMergeMode>Undefined</ItemMergeMode>
-                </BehaviourOptions>
-              </Options>
-            </InstallerConfigurationTransform>
-          </Transforms>
-        </FileToEntryConverter>
-      </Converter>
-      <Include />
-      <Exclude />
-      <Name>Files</Name>
-    </xfiles>
     <xitems>
       <Entries>
         <x-item>/master/sitecore/system/Modules/Publish Exclusions/{A84D52FB-52A4-4D33-BB4B-8F9FB3931523}/invariant/0</x-item>
@@ -69,10 +46,10 @@ Update 1.0.2
         <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Exclusion/Exclusion Details/Publish Modes/{4F2D831B-DA0B-4E99-BE3A-577B4431A501}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Exclusion/Exclusion Details/Publishing Target/{7CC04BA0-2E1F-44AB-AC8D-19F8CD05608B}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/{DE7680EB-4635-4853-BABF-3CD1EF6137A5}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Full/{76013B45-C104-4077-B75A-6EBFC8A4BD44}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Incremental/{3D44B870-628F-45AB-A2CD-81DB11668AE2}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Single Item/{58FB447B-0608-4E01-9359-27D5CF01DC96}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Smart/{81ACC9A4-3169-4E5A-B300-1C743EB0F135}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Full Publish/{76013B45-C104-4077-B75A-6EBFC8A4BD44}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Incremental or Site Publish/{3D44B870-628F-45AB-A2CD-81DB11668AE2}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Single Item Publish/{58FB447B-0608-4E01-9359-27D5CF01DC96}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/Publish Exclusions/Publish Modes/Smart Publish/{81ACC9A4-3169-4E5A-B300-1C743EB0F135}/invariant/0</x-item>
       </Entries>
       <SkipVersions>False</SkipVersions>
       <Converter>
@@ -93,6 +70,21 @@ Update 1.0.2
       <Exclude />
       <Name>Items</Name>
     </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.PublishExclusions.config</x-item>
+        <x-item>/bin/Sitecore.PublishExclusions.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
   </Sources>
   <Converter>
     <TrivialConverter>
